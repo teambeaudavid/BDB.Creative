@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Beau Bice</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <div class="logo">Beau Bice</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="page-hero">
+  <p class="page-eyebrow">Let's Connect</p>
+  <h1>Contact</h1>
+</section>
+<section class="featured">
+  <div class="container">
+    <div class="contact-wrap">
+      <div class="contact-info">
+        <p class="section-eyebrow">Get in Touch</p>
+        <h2>Let's build<br>something<br>worth shooting.</h2>
+        <p>Sports org, racetrack, shop, or outdoors brand — reach out and let's talk about what you need. No generic packages. We figure out what works for your project.</p>
+        <div class="contact-detail">
+          <p class="contact-detail-label">Email</p>
+          <!-- Replace with your actual email if different -->
+          <p class="contact-detail-value">teambeaudavid@gmail.com</p>
+        </div>
+        <div class="contact-detail">
+          <p class="contact-detail-label">Location</p>
+          <p class="contact-detail-value">Greenville, IL — available to travel</p>
+        </div>
+        <div class="contact-detail">
+          <p class="contact-detail-label">Response Time</p>
+          <p class="contact-detail-value">Usually within 24 hours</p>
+        </div>
+        <div class="contact-detail">
+          <p class="contact-detail-label">Follow Along</p>
+          <p class="contact-detail-value">
+            <a href="#" style="color:var(--accent);">Instagram</a>&nbsp;&nbsp;
+            <a href="#" style="color:var(--accent);">YouTube</a>
+          </p>
+        </div>
+      </div>
+      <div>
+        <!--
+          For a form that submits without opening an email client,
+          sign up free at formspree.io and replace the action URL.
+        -->
+        <form class="form" action="mailto:teambeaudavid@gmail.com" method="POST" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="organization" placeholder="Organization / Company (if applicable)">
+          <select name="service" required>
+            <option value="" disabled selected>Service Type</option>
+            <option>Sports Events</option>
+            <option>Automotive Media</option>
+            <option>Wildlife &amp; Outdoors</option>
+            <option>Portraits &amp; Headshots</option>
+            <option>Event Coverage</option>
+            <option>Videography</option>
+            <option>Other / Not Sure Yet</option>
+          </select>
+          <input type="text" name="date" placeholder="Event / Shoot Date (if known)">
+          <input type="text" name="location" placeholder="Location or General Area">
+          <textarea name="message" placeholder="Tell me about the project — what you need, what it's for, any details that help."></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Beau Bice</div>
+    <p class="footer-copy">&copy; 2026 Beau Bice</p>
+    <div class="footer-social">
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+    </div>
+  </div>
+</footer>
+	<script>
+  const params = new URLSearchParams(window.location.search);
+  const service = params.get("service");
+
+  if (service) {
+    const select = document.querySelector('select[name="service"]');
+    if (select) {
+      for (let option of select.options) {
+        if (option.value === service) {
+          option.selected = true;
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>

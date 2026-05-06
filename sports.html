@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Album</title>
+  <link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <div class="logo">Beau Bice</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero"><h1>Sports</h1></section>
+<nav class="album-nav">
+  <a href="cars.html" >Automotive</a>
+  <a href="sports.html" class="active">Sports</a>
+  <a href="wildlife.html">Wildlife</a>
+  <a href="landscape.html">Landscapes</a>
+  <a href="portraits.html">Portraits</a>
+  <a href="films.html">Films</a>
+</nav>
+<section class="container">
+  <div class="photo-grid" id="photoGrid">
+
+    <div class="photo-item">
+      <img src="IMG_2666 copy.jpg" alt="">
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_4570.jpg" alt="">
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_4825.jpg" alt="">
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_5451.jpg" alt="">
+    </div>
+	  
+<div class="photo-item">
+      <img src="IMG_6492 copy.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_6844 copy.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_6894.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_9486.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Hendrix D Line copy.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_1673.jpg" alt="">
+    </div>
+	  
+	   <div class="photo-item">
+      <img src="IMG_0198.jpg" alt="">
+    </div>
+	  
+	   <div class="photo-item">
+      <img src="IMG_0452.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_1847.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_1962.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_2788.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_3264.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_2045.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_2364.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_2430.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_2753.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_2805.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_2858.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_2941.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_3093.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_4337.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_5480.jpg" alt="">
+    </div>
+	  
+	    <div class="photo-item">
+      <img src="IMG_3239.jpg" alt="">
+    </div>
+	  
+	    <div class="photo-item">
+      <img src="IMG_3259.jpg" alt="">
+    </div>
+	  
+	    <div class="photo-item">
+      <img src="IMG_2683.jpg" alt="">
+    </div>
+	  
+	   
+	   <div class="photo-item">
+      <img src="IMG_3254.jpg" alt="">
+    </div>
+	  
+	   <div class="photo-item">
+      <img src="IMG_3966.jpg" alt="">
+    </div>
+	  
+	   <div class="photo-item">
+      <img src="portfolio_photos.jpg" alt="">
+    </div>
+	  
+	   <div class="photo-item">
+      <img src="Costarica_Vacation_-5.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Costarica_Vacation_-6.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_9954.jpg" alt="">
+    </div>
+	  
+	  
+	  <div class="photo-item">
+      <img src="IMG_9916.jpg" alt="">
+    </div>
+	  
+	  
+	  <div class="photo-item">
+      <img src="images/sports4.jpg" alt="">
+    </div>
+    <!-- KEEP ADDING MORE -->
+    <script>
+  const grid = document.getElementById("photoGrid");
+  const items = Array.from(grid.children);
+
+  // Shuffle function
+  for (let i = items.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [items[i], items[j]] = [items[j], items[i]];
+  }
+
+  // Re-append shuffled items
+  items.forEach(item => grid.appendChild(item));
+</script>
+  </div>
+</section>
+
+<footer class="footer"><p>© 2026 Beau Bice</p></footer>
+</body>
+</html>

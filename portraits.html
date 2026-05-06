@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portraits Album</title>
+  <link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <div class="logo">Beau Bice</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero"><h1>Portraits</h1></section>
+<nav class="album-nav">
+  <a href="cars.html" >Automotive</a>
+  <a href="sports.html">Sports</a>
+  <a href="wildlife.html">Wildlife</a>
+  <a href="landscape.html">Landscapes</a>
+  <a href="portraits.html" class="active">Portraits</a>
+  <a href="films.html">Films</a>
+</nav>
+<section class="container">
+  <div class="photo-grid" id="photoGrid">
+
+    <div class="photo-item">
+      <img src="IMG_5002 copy.jpg" alt="">
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_5265 copy.jpg" alt="">
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_4290 copy.jpg" alt="">
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_4271 copy.jpg" alt="">
+    </div>
+	  
+<div class="photo-item">
+      <img src="IMG_1479 copy.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Brayden Costa Rica 2024 copy.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Donner_Wedding-14 copy.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Donner_Wedding-19 copy.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Donner_Wedding-27 copy.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Donner_Wedding-24 copy.jpg" alt="">
+    </div>
+	  
+	   <div class="photo-item">
+      <img src="Donner_Wedding-8 copy.jpg" alt="">
+    </div>
+	  
+	   <div class="photo-item">
+      <img src="Dave Photo Shoot 1.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Dave Photo Shoot 2024.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Daves Photo Shoot 2.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Costarica_Vacation_-4.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_6225.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_6234.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="portfolio_photos.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="images/sports4.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="images/sports4.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="images/sports4.jpg" alt="">
+    </div>
+	  
+    <!-- KEEP ADDING MORE -->
+    <script>
+  const grid = document.getElementById("photoGrid");
+  const items = Array.from(grid.children);
+
+  // Shuffle function
+  for (let i = items.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [items[i], items[j]] = [items[j], items[i]];
+  }
+
+  // Re-append shuffled items
+  items.forEach(item => grid.appendChild(item));
+</script>
+  </div>
+</section>
+
+<footer class="footer"><p>© 2026 Beau Bice</p></footer>
+</body>
+</html>

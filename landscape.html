@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landscape Album</title>
+  <link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <div class="logo">Beau Bcie</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero"><h1>Landscape</h1></section>
+<nav class="album-nav">
+  <a href="cars.html" >Automotive</a>
+  <a href="sports.html">Sports</a>
+  <a href="wildlife.html">Wildlife</a>
+  <a href="landscape.html" class="active">Landscapes</a>
+  <a href="portraits.html">Portraits</a>
+  <a href="films.html">Films</a>
+</nav>
+<section class="container">
+  <div class="photo-grid" id="photoGrid">
+
+    <div class="photo-item">
+      <img src="IMG_0628 copy.jpg" alt="">
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_1225 copy.jpg" alt="">
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_1446 copy.jpg" alt="">
+    </div>
+
+    <div class="photo-item">
+      <img src="IMG_5725 copy.jpg" alt="">
+    </div>
+	  
+<div class="photo-item">
+      <img src="IMG_8634 copy.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Merica-02 copy.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Merica-08 copy.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Merica-19 copy.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_7412 copy.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Snow_Day_-3 copy.jpg" alt="">
+    </div>
+	  
+	   <div class="photo-item">
+      <img src="Snow_Day_-6 copy.jpg" alt="">
+    </div>
+	  
+	   <div class="photo-item">
+      <img src="portfolio_photos-6.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Costarica_Vacation_-2.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="Costarica_Vacation_-3.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="IMG_8634 copy.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="March_29_Greenville-8 copy.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="images/sports4.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="images/sports4.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="images/sports4.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="images/sports4.jpg" alt="">
+    </div>
+	  
+	  <div class="photo-item">
+      <img src="images/sports4.jpg" alt="">
+    </div>
+	  
+    <!-- KEEP ADDING MORE -->
+    <script>
+  const grid = document.getElementById("photoGrid");
+  const items = Array.from(grid.children);
+
+  // Shuffle function
+  for (let i = items.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [items[i], items[j]] = [items[j], items[i]];
+  }
+
+  // Re-append shuffled items
+  items.forEach(item => grid.appendChild(item));
+</script>
+  </div>
+</section>
+
+<footer class="footer"><p>© 2026 Beau Bice</p></footer>
+</body>
+</html>

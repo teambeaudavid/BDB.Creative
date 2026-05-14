@@ -152,10 +152,23 @@ nav a:hover::after, nav a.active::after { width: 100%; }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(to right, rgba(6,6,6,0.9) 0%, rgba(6,6,6,0.1) 70%),
-    linear-gradient(to top, rgba(6,6,6,0.98) 0%, transparent 60%);
   z-index: 1;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(6,6,6,1) 0%,
+      rgba(6,6,6,0.92) 18%,
+      rgba(6,6,6,0.75) 35%,
+      rgba(6,6,6,0.45) 55%,
+      rgba(6,6,6,0.15) 75%,
+      rgba(6,6,6,0) 100%
+    ),
+    linear-gradient(
+      to top,
+      rgba(6,6,6,0.95) 0%,
+      transparent 55%
+    );
 }
 
 .hero-content {
